@@ -1,0 +1,51 @@
+:root{
+    --btn-upper-edge: #bbb7c0;
+    --btn-lower-edge: #836baa;
+    --btn-inside: #e4b8f2;
+    --btn-highlight: #d9d3e8;
+    --btn-right-shine: #e2a799;
+}
+body{
+    background-image: linear-gradient(#64878f 10%, #3f575c);
+    background-size: 100vh 100vw;
+}
+h1{
+    background-color: #e9e3e0;
+}
+button{
+    border:none;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+}
+#button1 {
+
+
+    box-shadow: 0 5px var(--btn-lower-edge), 
+    0 -5px var(--btn-upper-edge),
+    inset -5px 0 4px var(--btn-right-shine),
+    inset -8px 0 var(--btn-inside),
+    inset 3px 0 var(--btn-inside),
+    inset 1px 5px 5px var(--btn-highlight);
+
+    background-color: var(--btn-inside);
+
+    transition: 1s;
+}
+
+#button2{
+    --btn-upper-edge-2: #e9e3e0;
+    --btn-lower-edge-2: #e6c7a7;
+    --btn-inside-2: #c482ba;
+    --btn-writing: #a2d5cd;
+    
+    background-color: var(--btn-inside-2);
+    color:var(--btn-writing);
+    box-shadow: inset 0 4px var(--btn-upper-edge-2), 
+    inset 0 -4px var(--btn-lower-edge-2);
+    transition: 1s;
+}
+button:active{
+    width: 90px;
+    height: 40px;
+}

@@ -1,0 +1,112 @@
+:root {
+    --bgcolor: #6bcef3;
+
+}
+body{
+    background-color: var(--bgcolor);
+}
+#button1{
+    --btn-outline: #001f90;
+
+    --btn-inside: #0045f4;
+    --btn-highlight1: #5c48f5;
+    --btn-highlight2: #7e4af3;
+    --btn-highlight3: #005df2be;
+    --btn-highlight4: #0156f4b7;
+
+    --btn-text-color: #2c17a3;
+    --btn-text-outline: #676fe034;
+    --btn-text-blur: 2px
+
+    color: var(--btn-text-color);
+
+    text-shadow: 1px 1px var(--btn-text-blur) var(--btn-text-outline), 
+    -1px 1px var(--btn-text-blur) var(--btn-text-outline),
+    1px -1px var(--btn-text-blur) var(--btn-text-outline),
+    -1px -1px var(--btn-text-blur) var(--btn-text-outline);
+    background-color: var(--btn-inside);
+    border: 3px solid var(--btn-outline);
+
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+
+    box-shadow: inset 9px -9px 10px var(--btn-highlight4),
+    inset -9px 0 5px var(--btn-highlight3),
+    inset 4px 4px 5px var(--btn-highlight2),
+    inset 9px 10px 5px var(--btn-highlight1);
+    transition: 1s;
+}
+#button1:hover{
+    --btn-inside: #1553f1;
+    --btn-text-color: #221474;
+    color: var(--btn-text-color);
+
+    box-shadow: inset 9px -9px 10px var(--btn-highlight4),
+    inset -4px 0 5px var(--btn-highlight3),
+    inset 4px 4px 15px var(--btn-highlight2),
+    inset 9px 10px 15px var(--btn-highlight1);
+}
+#button1:active{
+    --btn-text-outline: white;
+    --btn-inside: rgb(26, 61, 189);
+    --btn-text-color: #332586;
+
+    color: var(--btn-text-color);
+    
+    
+}
+
+
+#button2{
+    --btn-inside: #123af4; /* original --btn-inside: #123af4; */
+    --btn-outeredge: #0082e8;
+    --btn-highlight-top: #4655d8;
+    --btn-highlight-main: #8f25f3;
+    --btn-highlight-second: #ba9ced;
+    --btn-highlight-side: #f574f5;
+
+    background-color: var(--btn-highlight-top);
+    color: rgba(215, 205, 221, 0.527);
+    font-weight: 600;
+
+    width: 100px;
+    height: 50px;
+
+    box-shadow: 0 -2px var(--btn-outeredge), 0 2px var(--btn-outeredge), 
+    inset 0 -20px 5px var(--btn-inside),     
+    inset 0 -30px 5px var(--btn-highlight-main),
+    inset 20px 0 3px var(--btn-highlight-side),
+    inset 0 -40px 5px var(--btn-highlight-second);
+
+    border-radius: 50px;
+    transition: 0.2s;
+}
+#button2:hover{
+    --btn-highlight-top-onhover: #011a8a;
+    --btn-inside-onhover: #0e2aa7;
+    --btn-outeredge-onhover: #015ca1;
+    --btn-highlight-side-onhover: #f574f5;
+
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.404);
+    background-color: var(--btn-highlight-top-onhover);
+
+    box-shadow: 0 -2px var(--btn-outeredge-onhover), 0 2px var(--btn-outeredge-onhover), 
+    inset 0 -20px 5px var(--btn-inside-onhover), 
+    inset 0 -30px 7px var(--btn-highlight-main),
+    inset 20px 0 5px var(--btn-highlight-side-onhover),
+    inset 0 -40px 5px var(--btn-highlight-second);
+}
+#button2:active{
+    --btn-highlight-top-active: #3755da;
+    --btn-inside-active: #1c39b9;
+    text-shadow: none;
+
+    background-color: var(--btn-highlight-top-active);
+
+    box-shadow: 0 -2px var(--btn-outeredge-onhover), 0 2px var(--btn-outeredge-onhover), 
+    inset 0 -20px 10px var(--btn-inside-active), 
+    inset 0 -20px 7px var(--btn-highlight-main),
+    inset 20px 2px 10px var(--btn-highlight-side-onhover),
+    inset 0 -40px 7px var(--btn-highlight-second);
+}
