@@ -9,8 +9,22 @@ body{
     background-image: linear-gradient(#64878f 10%, #3f575c);
     background-size: 100vh 100vw;
 }
+header{
+    background-color: #2e4044;
+}
+nav{
+    padding: 10px 0;
+}
+a, a:visited{
+    color: white;
+}
 h1{
     background-color: #e9e3e0;
+    
+    padding: 5px 0;
+}
+main{
+    margin-top: 20px;
 }
 button{
     border:none;

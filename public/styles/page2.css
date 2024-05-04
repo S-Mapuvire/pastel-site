@@ -1,9 +1,28 @@
 :root {
     --bgcolor: #6bcef3;
+    --header-color: hsl(196, 61%, 48%);
+    --nav-footer: hsl(196, 61%, 38%);
 
 }
 body{
     background-color: var(--bgcolor);
+}
+header{
+    background-color: var(--header-color);
+}
+h1{
+    padding: 5px 0;
+}
+nav, footer{
+    background-color: var(--nav-footer);
+    line-height: 30px;
+}
+nav{
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+a, a:visited{
+    color: black;
 }
 #button1{
     --btn-outline: #001f90;
@@ -14,7 +33,7 @@ body{
     --btn-highlight3: #005df2be;
     --btn-highlight4: #0156f4b7;
 
-    --btn-text-color: #2c17a3;
+    --btn-text-color: hsl(249, 75%, 36%);
     --btn-text-outline: #676fe034;
     --btn-text-blur: 2px
 
@@ -53,11 +72,7 @@ body{
     --btn-text-color: #332586;
 
     color: var(--btn-text-color);
-    
-    
 }
-
-
 #button2{
     --btn-inside: #123af4; /* original --btn-inside: #123af4; */
     --btn-outeredge: #0082e8;

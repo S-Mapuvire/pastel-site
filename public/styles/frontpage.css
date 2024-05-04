@@ -9,13 +9,27 @@
     --color3:#eedbb3; 
     --color4:#dad3b9;
 }
-
 body{
     background: linear-gradient(to bottom, rgb(233, 195, 217), 80%, rgb(241, 147, 183));
     background-size: 100vh 100vw;
 }
+header{
+    background-color: hsl(325, 46%, 94%);
+}
+h1{
+    padding: 5px 0;
+}
+nav{
+    padding: 10px 0;
+}
+nav, footer{
+    background-color: rgb(241, 147, 183);
+}
+a, a:visited{
+    color: white;
+}
 button{
-    color: #9227923a;
+    color: #92279286;
     background-color: #f1b5f1;
     
     width: 100px;
@@ -46,7 +60,7 @@ button{
 
 }
 button:hover{
-    color: #8a418a71;
+    color: #8a418a9d;
     background-color: #facafaf3;
 
     border: 1px solid rgba(226, 211, 224, 0.301);
@@ -92,4 +106,7 @@ button:active{
     inset 0 -12px 10px rgba(233, 179, 233, 0.8),
     inset 0 -20px 20px rgba(241, 201, 241);
 
+}
+footer{
+    color: white;
 }
